@@ -1,0 +1,69 @@
+#root {
+    align-self: flex-start;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1280px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-row {
+    display: flex;
+    gap: 10px;
+}
+
+.list-row > li {
+    position: relative;
+    cursor: pointer;
+}
+
+.list-icon {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text {
+    color: black;
+    cursor: pointer;
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.content-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.description {
+    height: 0;
+    transition: all 0.3s;
+}
+
+.open {
+    height: 100%;
+    transform: translate(0, 20px);
+    opacity: 1;
+}
+
+.close {
+    height: 0;
+    overflow: hidden;    
+    transform: translate(0, 0);
+    opacity: 0;
+    transition: 0.3s ease;
+}
