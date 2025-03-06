@@ -7,7 +7,7 @@ type CollapseProps = {
 
 export default function Collapse(props: CollapseProps) {
     const { collapsedLabel, expandedLabel } = props;
-    let [description, setDescription] = useState('description close');
+    const [description, setDescription] = useState('description close');
 
     const handler = () => {
         setDescription(description === 'description close' ? 'description open' : 'description close')
