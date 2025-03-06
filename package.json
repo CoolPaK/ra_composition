@@ -26,7 +26,7 @@
     "vite": "^4.4.5"
   },
   "description": "homeworks",
-  "main": "App.tsx",
+  "main": "main.tsx",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/CoolPaK/ra_composition.git"
